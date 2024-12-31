@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text to Speech & Speech to Text</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 id="greeting">Welcome!</h1>
+        <div class="text-to-speech">
+            <h2>Text to Speech</h2>
+            <textarea id="textInput" placeholder="Enter text here..." rows="5" cols="40"></textarea>
+            <br>
+            <button id="speakButton">Speak</button>
+            <label for="speedControl">Playback Speed:</label>
+            <input type="range" id="speedControl" min="0.5" max="2" step="0.1" value="1">
+            <span id="speedValue">1x</span>
+            <br>
+            <label for="voiceSelect">Choose Voice:</label>
+            <select id="voiceSelect"></select>
+        </div>
+
+        <div class="speech-to-text">
+            <h2>Speech to Text</h2>
+            <button id="startListening">Start Listening</button>
+            <p id="transcript">Your speech will appear here...</p>
+        </div>
+
+        <div id="playback">
+            <button id="playPauseButton">Play/Pause</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
